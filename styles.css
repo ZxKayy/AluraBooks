@@ -19,4 +19,80 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner__titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carrossel__container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.carrossel__titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tópicos {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tópicos__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.tópicos__item {
+    display: inline;
+    margin: 0 10px;
+}
+
+.contato {
+    text-align: center;
+    padding: 20px;
+}
+
+.contato__email {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.rodapé {
+    background-color: var(--azul);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
