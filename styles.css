@@ -10,7 +10,7 @@
     --branco: #FFFFFF;
     --laranja: #EB9B00;
     --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
+    --fonte-principal: "Poppins", sans-serif;
     --azul: #002F52;
 }
 
@@ -20,79 +20,133 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .cabeçalho {
+    background-color: var(--azul);
+    color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+.lista-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-menu__titulo {
+    font-weight: bold;
+}
+
+.lista-menu__link {
+    color: var(--branco);
+    text-decoration: none;
 }
 
 .banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
-.banner__titulo {
-    font-size: 24px;
-    margin-bottom: 10px;
+.banner__pesquisa {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
 }
 
-.carrossel__container {
-    position: relative;
+.carrossel {
     margin: 20px 0;
 }
 
 .carrossel__titulo {
     text-align: center;
-    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .card {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descrição {
+    flex: 1;
+}
+
+.descrição__titulo-livro {
+    font-weight: bold;
+}
+
+.botões {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.botões__ancora {
+    margin-left: auto;
+    text-decoration: none;
+    color: var(--laranja);
 }
 
 .tópicos {
-    padding: 20px 0;
+    padding: 20px;
+    background: var(--branco);
+}
+
+.tópicos__titulo {
     text-align: center;
 }
 
 .tópicos__lista {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tópicos__item {
-    display: inline;
-    margin: 0 10px;
+    margin: 5px;
 }
 
 .contato {
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 .contato__email {
     padding: 10px;
     margin-top: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.contato__email:focus {
+    border: 2px solid var(--laranja);
+    outline: none;
 }
 
 .rodapé {
-    background-color: var(--azul);
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background: var(--azul);
+    color: var(--branco);
 }
