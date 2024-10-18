@@ -67,16 +67,6 @@
       color: #e0e0e0;
     }
 
-    .banner__pesquisa {
-      margin-top: 20px;
-      padding: 10px;
-      width: 60%;
-      font-size: 16px;
-      border: 2px solid #e0b241;
-      background-color: #1e1e1e;
-      color: #fff;
-    }
-
     .carrossel {
       padding: 40px 20px;
       text-align: center;
@@ -90,6 +80,12 @@
     .swiper-slide img {
       max-width: 100%;
       height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .swiper-slide img:hover {
+      transform: scale(1.05);
     }
 
     .tópicos {
@@ -197,7 +193,6 @@
   <section class="banner">
     <h2 class="banner__titulo">The Beginning After the End</h2>
     <p class="banner__texto">Descubra um mundo repleto de magia, aventuras e renascimentos!</p>
-    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima aventura?">
   </section>
 
   <section class="carrossel">
@@ -205,15 +200,35 @@
 
     <div class="swiper">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/volume1.jpg" alt="Volume 1"></div>
-        <div class="swiper-slide"><img src="img/volume2.jpg" alt="Volume 2"></div>
-        <div class="swiper-slide"><img src="img/volume3.jpg" alt="Volume 3"></div>
-        <div class="swiper-slide"><img src="img/volume4.jpg" alt="Volume 4"></div>
-        <div class="swiper-slide"><img src="img/volume5.jpg" alt="Volume 5"></div>
+        <!-- Slides com links para compra -->
+        <div class="swiper-slide">
+          <a href="https://linkparacompra.com/volume1" target="_blank">
+            <img src="img/volume1.jpg" alt="Volume 1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://linkparacompra.com/volume2" target="_blank">
+            <img src="img/volume2.jpg" alt="Volume 2">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://linkparacompra.com/volume3" target="_blank">
+            <img src="img/volume3.jpg" alt="Volume 3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://linkparacompra.com/volume4" target="_blank">
+            <img src="img/volume4.jpg" alt="Volume 4">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://linkparacompra.com/volume5" target="_blank">
+            <img src="img/volume5.jpg" alt="Volume 5">
+          </a>
+        </div>
       </div>
 
-      <!-- Pagination and Navigation -->
+      <!-- Paginação e navegação -->
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
@@ -260,7 +275,6 @@
       },
     });
   </script>
-
 </body>
 
 </html>
