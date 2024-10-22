@@ -75,9 +75,16 @@
       color: #e0b241;
     }
 
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .swiper-slide img {
-      max-width: 100%;
-      height: auto;
+      width: 200px; /* Largura fixa */
+      height: 300px; /* Altura fixa */
+      object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
       cursor: pointer;
       transition: transform 0.3s ease;
     }
@@ -159,7 +166,7 @@
   </section>
 
   <section class="carrossel">
-    <h2 class="carrossel__titulo">The Beggining After The End</h2>
+    <h2 class="carrossel__titulo">The Beginning After The End</h2>
 
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -237,7 +244,15 @@
         prevEl: '.swiper-button-prev',
       },
     });
-  </script>
-</body>
+  </Para garantir que todas as imagens do carrossel tenham o mesmo tamanho, o código foi ajustado para definir uma largura e altura fixas para as imagens, além de aplicar a propriedade `object-fit: cover`. Isso fará com que as imagens se ajustem ao tamanho definido, mantendo a proporção correta.
 
-</html>
+Aqui está a parte relevante do código que você deve incluir:
+
+```css
+.swiper-slide img {
+    width: 200px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
