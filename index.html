@@ -50,7 +50,7 @@
     }
 
     .banner {
-      background-color: #292929; /* Fundo removido */
+      background-color: #292929;
       text-align: center;
       padding: 100px 20px;
     }
@@ -79,12 +79,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 200px; /* Ajuste conforme necessário */
     }
 
     .swiper-slide img {
-      width: 200px; /* Largura fixa */
-      height: 300px; /* Altura fixa */
-      object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+      width: 100%; /* Ajusta a largura da imagem */
+      height: auto; /* Altura automática para manter a proporção */
+      max-height: 300px; /* Altura máxima para manter o tamanho desejado */
+      object-fit: cover; /* Mantém a proporção da imagem */
       cursor: pointer;
       transition: transform 0.3s ease;
     }
@@ -155,7 +157,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Livros</a></li>
         <li><a href="#">Personagens</a></li>
-        <li><a href="https://zxkayy.github.io/turtle-me/">Sobre</a></li> <!-- Link atualizado -->
+        <li><a href="https://zxkayy.github.io/turtle-me/">Sobre</a></li>
       </ul>
     </nav>
   </header>
@@ -170,7 +172,6 @@
 
     <div class="swiper">
       <div class="swiper-wrapper">
-        <!-- Slides com links e botões -->
         <div class="swiper-slide">
           <img src="img/volume1.jpg" alt="Volume 1">
           <div class="botoes">
@@ -224,9 +225,7 @@
   <footer>
     <h2>Grupo The Beginning After the End</h2>
     <ul>
-      <li><a href="https://zxkayy.github.io/turtle-me/">Sobre Nós</a></li> <!-- Link atualizado -->
-      <li><a href="#">Termos de Uso</a></li>
-      <li><a href="#">Política de Privacidade</a></li>
+      <li><a href="https://zxkayy.github.io/turtle-me/">Sobre Nós</a></li>
     </ul>
   </footer>
 
@@ -234,7 +233,7 @@
   <script>
     const swiper = new Swiper('.swiper', {
       spaceBetween: 10,
-      slidesPerView: 3,
+      slidesPerView: 3, // Mostra 3 volumes de uma vez
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -244,15 +243,7 @@
         prevEl: '.swiper-button-prev',
       },
     });
-  </Para garantir que todas as imagens do carrossel tenham o mesmo tamanho, o código foi ajustado para definir uma largura e altura fixas para as imagens, além de aplicar a propriedade `object-fit: cover`. Isso fará com que as imagens se ajustem ao tamanho definido, mantendo a proporção correta.
+  </script>
+</body>
 
-Aqui está a parte relevante do código que você deve incluir:
-
-```css
-.swiper-slide img {
-    width: 200px; /* Largura fixa */
-    height: 300px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+</html>
