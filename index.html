@@ -50,9 +50,7 @@
     }
 
     .banner {
-      background-image: url('img/banner_tbate.png');
-      background-size: cover;
-      background-position: center;
+      background-color: #292929; /* Fundo removido */
       text-align: center;
       padding: 100px 20px;
     }
@@ -88,6 +86,25 @@
       transform: scale(1.05);
     }
 
+    .botoes {
+      margin-top: 15px;
+    }
+
+    .botao {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #e0b241;
+      border: none;
+      color: #121212;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background-color: #c59436;
+    }
+
     .tópicos {
       background-color: #1e1e1e;
       padding: 40px 20px;
@@ -99,70 +116,16 @@
       color: #e0b241;
     }
 
-    .tópicos__lista {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .tópicos__item a {
-      text-decoration: none;
-      font-size: 18px;
-      color: #fff;
-      border-bottom: 2px solid transparent;
-      transition: all 0.3s;
-    }
-
-    .tópicos__item a:hover {
-      border-bottom: 2px solid #e0b241;
-    }
-
     .contato {
       padding: 40px 20px;
       text-align: center;
       background-color: #292929;
     }
 
-    .contato__titulo {
-      font-size: 30px;
-      color: #fff;
-    }
-
-    .contato__texto {
-      font-size: 18px;
-      color: #e0e0e0;
-      margin-bottom: 20px;
-    }
-
-    .contato__email {
-      padding: 10px;
-      width: 300px;
-      font-size: 16px;
-      background-color: #1e1e1e;
-      border: 2px solid #e0b241;
-      color: #fff;
-    }
-
     footer {
       background-color: #121212;
       padding: 20px;
       text-align: center;
-    }
-
-    footer h2 {
-      font-size: 24px;
-      color: #e0b241;
-    }
-
-    footer ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    footer li {
-      margin: 10px 0;
     }
 
     footer a {
@@ -179,18 +142,20 @@
 <body>
 
   <header>
+    <img src="img/tbate-logo.png" alt="Logo The Beginning After the End" class="logo">
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Livros</a></li>
         <li><a href="#">Personagens</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="https://zxkayy.github.io/turtle-me/">Sobre</a></li> <!-- Link atualizado -->
       </ul>
     </nav>
   </header>
 
   <section class="banner">
     <h2 class="banner__titulo">The Beginning After the End</h2>
-    <p class="banner__texto">Descubra um mundo repleto de magia, aventuras e renascimentos!</p>
+    <p class="banner__texto">Descubra mais sobre esse universo dos manga/manwha e novels.</p>
   </section>
 
   <section class="carrossel">
@@ -198,31 +163,41 @@
 
     <div class="swiper">
       <div class="swiper-wrapper">
-        <!-- Slides com links para compra -->
+        <!-- Slides com links e botões -->
         <div class="swiper-slide">
-          <a href="https://linkparacompra.com/volume1" target="_blank">
-            <img src="img/volume1.jpg" alt="Volume 1">
-          </a>
+          <img src="img/volume1.jpg" alt="Volume 1">
+          <div class="botoes">
+            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
+            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Comprar</a>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="https://linkparacompra.com/volume2" target="_blank">
-            <img src="img/volume2.jpg" alt="Volume 2">
-          </a>
+          <img src="img/volume2.jpg" alt="Volume 2">
+          <div class="botoes">
+            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
+            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Comprar</a>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="https://linkparacompra.com/volume3" target="_blank">
-            <img src="img/volume3.jpg" alt="Volume 3">
-          </a>
+          <img src="img/volume3.jpg" alt="Volume 3">
+          <div class="botoes">
+            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
+            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Comprar</a>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="https://linkparacompra.com/volume4" target="_blank">
-            <img src="img/volume4.jpg" alt="Volume 4">
-          </a>
+          <img src="img/volume4.jpg" alt="Volume 4">
+          <div class="botoes">
+            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
+            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Comprar</a>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="https://linkparacompra.com/volume5" target="_blank">
-            <img src="img/volume5.jpg" alt="Volume 5">
-          </a>
+          <img src="img/volume5.jpg" alt="Volume 5">
+          <div class="botoes">
+            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
+            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Comprar</a>
+          </div>
         </div>
       </div>
 
@@ -231,16 +206,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </section>
-
-  <section class="tópicos">
-    <h2 class="tópicos__titulo">TÓPICOS RECENTES</h2>
-    <ul class="tópicos__lista">
-      <li class="tópicos__item"><a href="#">Magia</a></li>
-      <li class="tópicos__item"><a href="#">Personagens</a></li>
-      <li class="tópicos__item"><a href="#">Mundo</a></li>
-      <li class="tópicos__item"><a href="#">Reinos</a></li>
-    </ul>
   </section>
 
   <section class="contato">
@@ -252,7 +217,7 @@
   <footer>
     <h2>Grupo The Beginning After the End</h2>
     <ul>
-      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="https://zxkayy.github.io/turtle-me/">Sobre Nós</a></li> <!-- Link atualizado -->
       <li><a href="#">Termos de Uso</a></li>
       <li><a href="#">Política de Privacidade</a></li>
     </ul>
