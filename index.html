@@ -50,7 +50,7 @@
     }
 
     .banner {
-      background-color: #292929; /* Fundo removido */
+      background-color: #292929;
       text-align: center;
       padding: 100px 20px;
     }
@@ -116,6 +116,36 @@
       color: #e0b241;
     }
 
+    .personagens {
+      background-color: #1e1e1e;
+      padding: 40px 20px;
+      text-align: left;
+    }
+
+    .personagens__titulo {
+      font-size: 36px;
+      color: #e0b241;
+      text-align: center;
+    }
+
+    .personagem {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .personagem__imagem {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
+    .personagem__descricao {
+      flex-grow: 1;
+    }
+
     .contato {
       padding: 40px 20px;
       text-align: center;
@@ -146,9 +176,9 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#livros">Obras</a></li> <!-- Nome alterado e link atualizado -->
-        <li><a href="#">Personagens</a></li>
-        <li><a href="https://zxkayy.github.io/turtle-me/">Sobre</a></li> <!-- Link atualizado -->
+        <li><a href="#livros">Obras</a></li>
+        <li><a href="#personagens">Personagens</a></li>
+        <li><a href="https://zxkayy.github.io/turtle-me/">Sobre</a></li>
       </ul>
     </nav>
   </header>
@@ -158,54 +188,23 @@
     <p class="banner__texto">Descubra mais sobre esse universo dos manga/manwha e novels.</p>
   </section>
 
-  <section class="carrossel" id="livros"> <!-- Adicionei o ID aqui -->
+  <section class="carrossel" id="livros">
     <h2 class="carrossel__titulo">As Obras de The Beginning After The End</h2>
+    <!-- Carrossel de imagens -->
+  </section>
 
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Slides com links e botões -->
-        <div class="swiper-slide">
-          <img src="img/volume1.jpg" alt="Volume 1">
-          <div class="botoes">
-            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
-            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Novel</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/volume2.jpg" alt="Volume 2">
-          <div class="botoes">
-            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
-            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Novel</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/volume3.jpg" alt="Volume 3">
-          <div class="botoes">
-            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
-            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Novel</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/volume4.jpg" alt="Volume 4">
-          <div class="botoes">
-            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
-            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Novel</a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="img/volume5.jpg" alt="Volume 5">
-          <div class="botoes">
-            <a href="https://tsuki-mangas.com/obra/60/the-beginning-after-the-end" class="botao" target="_blank">Manhwa</a>
-            <a href="https://animecenterbr.com/the-beginning-after-the-end-light-novel-portugues-pt-br/" class="botao" target="_blank">Novel</a>
-          </div>
-        </div>
+  <!-- Seção de Personagens -->
+  <section class="personagens" id="personagens">
+    <h2 class="personagens__titulo">Personagens</h2>
+
+    <div class="personagem">
+      <img src="img/arthur.jpg" alt="Arthur Leywin" class="personagem__imagem">
+      <div class="personagem__descricao">
+        <h3>Arthur Leywin</h3>
+        <p>Arthur Leywin é o protagonista principal de The Beginning After the End. Ele nasceu como Grey em um mundo anterior, onde foi um rei poderoso, mas solitário. Após sua morte, ele reencarna em um novo mundo de magia e monstros, onde decide viver sua nova vida de forma diferente, protegendo seus entes queridos e se tornando mais forte para enfrentar as ameaças que surgem. Ele é um combatente habilidoso, com uma mente estratégica e uma grande capacidade de aprendizado em relação às artes mágicas.</p>
       </div>
-
-      <!-- Paginação e navegação -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
+
   </section>
 
   <section class="contato">
@@ -217,8 +216,7 @@
   <footer>
     <h2>Grupo The Beginning After the End</h2>
     <ul>
-      <li><a href="https://zxkayy.github.io/turtle-me/">Sobre Nós</a></li> <!-- Link atualizado -->
-      
+      <li><a href="https://zxkayy.github.io/turtle-me/">Sobre Nós</a></li>
     </ul>
   </footer>
 
