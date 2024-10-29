@@ -21,3 +21,198 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0b241;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  background-color: #292929;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner__titulo {
+  font-size: 48px;
+  color: #fff;
+}
+
+.banner__texto {
+  font-size: 24px;
+  color: #e0e0e0;
+}
+
+.carrossel {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.carrossel__titulo {
+  font-size: 36px;
+  color: #e0b241;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+.botoes {
+  margin-top: 15px;
+}
+
+.botao {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e0b241;
+  border: none;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: #c59436;
+}
+
+.tópicos {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tópicos__titulo {
+  font-size: 36px;
+  color: #e0b241;
+}
+
+.personagens {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.personagens__titulo {
+  font-size: 36px;
+  color: #e0b241;
+  text-align: center;
+}
+
+.personagem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.personagem__imagem {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.personagem__descricao {
+  flex-grow: 1;
+}
+
+.contato {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #292929;
+}
+
+.email-container {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.email-input {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px; /* Espaço para a imagem */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.email-placeholder {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Impede a interação com o texto */
+  transition: opacity 0.2s;
+  color: #999;
+}
+
+.email-input:focus + .email-placeholder,
+.email-input:not(:placeholder-shown) + .email-placeholder {
+  opacity: 0; /* Esconde o placeholder ao digitar */
+}
+
+.email-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-color: #121212;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
