@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -153,6 +152,44 @@
       background-color: #292929;
     }
 
+    .email-container {
+      position: relative;
+      width: 300px;
+      height: 50px;
+      margin: 20px auto;
+    }
+
+    .email-input {
+      width: 100%;
+      height: 100%;
+      padding-left: 40px; /* Espaço para a imagem */
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .email-placeholder {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none; /* Impede a interação com o texto */
+      transition: opacity 0.2s;
+      color: #999;
+    }
+
+    .email-input:focus + .email-placeholder,
+    .email-input:not(:placeholder-shown) + .email-placeholder {
+      opacity: 0; /* Esconde o placeholder ao digitar */
+    }
+
+    .email-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     footer {
       background-color: #121212;
       padding: 20px;
@@ -254,7 +291,11 @@
   <section class="contato">
     <h2 class="contato__titulo">Fique por Dentro das Novidades</h2>
     <p class="contato__texto">Assine nossa newsletter para receber atualizações e ofertas exclusivas.</p>
-    <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+    <div class="email-container">
+      <img src="email.svg" alt="Email Icon" class="email-icon">
+      <input type="email" class="email-input" placeholder=" " required>
+      <label class="email-placeholder">Cadastre seu email</label>
+    </div>
   </section>
 
   <footer>
